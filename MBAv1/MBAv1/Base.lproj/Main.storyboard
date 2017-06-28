@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ida-lw-Dyp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ida-lw-Dyp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,6 +26,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="3rs-Kt-d7c">
                         <barButtonItem key="backBarButtonItem" title="Back" id="e80-5H-hpF"/>
+                        <barButtonItem key="leftBarButtonItem" title="MBA" id="FOY-Vq-tb0">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ic_settings_white_24dp" id="2Jr-mz-kJ6">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -96,7 +99,7 @@
                                     <constraint firstAttribute="height" constant="24" id="j45-MS-jwX"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_event_note" translatesAutoresizingMaskIntoConstraints="NO" id="Rns-sU-UeK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_email" translatesAutoresizingMaskIntoConstraints="NO" id="Rns-sU-UeK">
                                 <rect key="frame" x="16" y="290" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="Emq-2g-K4P"/>
@@ -164,6 +167,7 @@
     </scenes>
     <resources>
         <image name="ic_account_box" width="24" height="24"/>
+        <image name="ic_email" width="24" height="24"/>
         <image name="ic_event_note" width="24" height="24"/>
         <image name="ic_settings_white_24dp" width="36" height="36"/>
     </resources>
