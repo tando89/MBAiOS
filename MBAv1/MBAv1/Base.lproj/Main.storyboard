@@ -25,7 +25,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oIV-Ah-QQq">
                                 <rect key="frame" x="20" y="72" width="374" height="634"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="InT-og-Cdd">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="InT-og-Cdd">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="101.66666666666666"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXa-2U-TK7">
@@ -46,16 +46,18 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-4G-YZk">
-                                        <rect key="frame" x="54" y="106.66666666666664" width="266" height="101.33333333333336"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-4G-YZk">
+                                        <rect key="frame" x="51.666666666666686" y="106.66666666666664" width="271" height="101.33333333333336"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEK-Ih-Nb9">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="101.33333333333334"/>
-                                                <state key="normal" title="Button" backgroundImage="About Us"/>
+                                                <rect key="frame" x="0.0" y="10" width="127.99999999999999" height="81.000000000000028"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="ABOUT US" backgroundImage="About Us"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTL-20-l6Y">
-                                                <rect key="frame" x="138" y="0.0" width="128" height="101.33333333333334"/>
-                                                <state key="normal" title="Button" backgroundImage="About Us"/>
+                                                <rect key="frame" x="143" y="10" width="128" height="81.000000000000028"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="CONTACT US" backgroundImage="Contact Us"/>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -63,16 +65,18 @@
                                             <constraint firstItem="pTL-20-l6Y" firstAttribute="width" secondItem="uEK-Ih-Nb9" secondAttribute="width" id="v4I-YK-EAo"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="di4-Bf-TYO">
-                                        <rect key="frame" x="54" y="213.00000000000003" width="266" height="101.66666666666671"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="di4-Bf-TYO">
+                                        <rect key="frame" x="51.666666666666686" y="213.00000000000003" width="271" height="101.66666666666671"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip0-Cx-Vwf">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="101.66666666666669"/>
-                                                <state key="normal" title="Button" backgroundImage="About Us"/>
+                                                <rect key="frame" x="0.0" y="10.333333333333314" width="127.99999999999999" height="81"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="PASSPORT" backgroundImage="Passport"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsi-sg-mL4">
-                                                <rect key="frame" x="138" y="0.0" width="128" height="101.66666666666669"/>
-                                                <state key="normal" title="Button" backgroundImage="About Us"/>
+                                                <rect key="frame" x="143" y="10.333333333333314" width="128" height="81"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="ADVISING" backgroundImage="Advising"/>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -80,16 +84,18 @@
                                             <constraint firstItem="Zsi-sg-mL4" firstAttribute="height" secondItem="ip0-Cx-Vwf" secondAttribute="height" id="h19-ym-UI4"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lLc-kY-ZTR">
-                                        <rect key="frame" x="54" y="319.66666666666674" width="266" height="101.33333333333331"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lLc-kY-ZTR">
+                                        <rect key="frame" x="51.666666666666686" y="319.66666666666674" width="271" height="101.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzA-f3-1hd">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="101.33333333333331"/>
-                                                <state key="normal" title="Button" backgroundImage="About Us"/>
+                                                <rect key="frame" x="0.0" y="10" width="127.99999999999999" height="81"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="CALENDARS" backgroundImage="Calendars"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5C-Kb-kG9">
-                                                <rect key="frame" x="138" y="0.0" width="128" height="101.33333333333331"/>
-                                                <state key="normal" title="Button" backgroundImage="About Us"/>
+                                                <rect key="frame" x="143" y="10" width="128" height="81"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="MY COYOTE" backgroundImage="MyCoyote"/>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -97,16 +103,24 @@
                                             <constraint firstItem="E5C-Kb-kG9" firstAttribute="width" secondItem="pzA-f3-1hd" secondAttribute="width" id="yWp-MC-kqj"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SUu-oM-HhH">
-                                        <rect key="frame" x="54" y="426" width="266" height="101.66666666666663"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SUu-oM-HhH">
+                                        <rect key="frame" x="51.666666666666686" y="426" width="271" height="101.66666666666663"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ous-MJ-MR6">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="101.66666666666663"/>
-                                                <state key="normal" title="Button" backgroundImage="About Us"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ous-MJ-MR6">
+                                                <rect key="frame" x="0.0" y="10.333333333333314" width="127.99999999999999" height="81.000000000000057"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" backgroundImage="Student Ambassadors">
+                                                    <string key="title">    STUDENT
+AMBASSADOR</string>
+                                                </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stR-b6-gVl">
-                                                <rect key="frame" x="138" y="0.0" width="128" height="101.66666666666663"/>
-                                                <state key="normal" title="Button" backgroundImage="About Us"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="stR-b6-gVl">
+                                                <rect key="frame" x="143" y="10.333333333333314" width="128" height="81.000000000000057"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" backgroundImage="About Us">
+                                                    <string key="title">    GRADUATE
+ASSISTANTSHIP</string>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -114,7 +128,7 @@
                                             <constraint firstItem="stR-b6-gVl" firstAttribute="height" secondItem="Ous-MJ-MR6" secondAttribute="height" id="yj6-df-vy9"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nca-f4-agR">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nca-f4-agR">
                                         <rect key="frame" x="0.0" y="532.66666666666652" width="374" height="101.33333333333337"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-PO-oK2">
@@ -123,18 +137,30 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giq-9D-3Qu">
                                                         <rect key="frame" x="125" y="38" width="25" height="25"/>
                                                         <state key="normal" backgroundImage="facebookicon"/>
+                                                        <connections>
+                                                            <action selector="FaceBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e84-6u-0Ji"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9v-0x-aep">
                                                         <rect key="frame" x="158" y="38" width="25" height="25"/>
-                                                        <state key="normal" backgroundImage="facebookicon"/>
+                                                        <state key="normal" backgroundImage="instagramicon"/>
+                                                        <connections>
+                                                            <action selector="Instagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ee-mJ-H29"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAM-NV-bkp">
                                                         <rect key="frame" x="191" y="38" width="25" height="25"/>
-                                                        <state key="normal" backgroundImage="facebookicon"/>
+                                                        <state key="normal" backgroundImage="twittericon"/>
+                                                        <connections>
+                                                            <action selector="Twitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9r0-7L-mhG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9y-Sp-gic">
                                                         <rect key="frame" x="224" y="38" width="25" height="25"/>
-                                                        <state key="normal" backgroundImage="facebookicon"/>
+                                                        <state key="normal" backgroundImage="linkedin"/>
+                                                        <connections>
+                                                            <action selector="Linkedin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDk-HY-e9Q"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -322,11 +348,20 @@
     </scenes>
     <resources>
         <image name="About Us" width="128" height="81"/>
+        <image name="Advising" width="128" height="81"/>
+        <image name="Calendars" width="128" height="81"/>
+        <image name="Contact Us" width="128" height="81"/>
+        <image name="MyCoyote" width="128" height="81"/>
+        <image name="Passport" width="128" height="81"/>
+        <image name="Student Ambassadors" width="128" height="81"/>
         <image name="csusb_logo" width="768" height="480"/>
         <image name="facebookicon" width="25" height="25"/>
         <image name="ic_account_box" width="24" height="24"/>
         <image name="ic_email" width="24" height="24"/>
         <image name="ic_event_note" width="24" height="24"/>
         <image name="ic_settings_white_24dp" width="36" height="36"/>
+        <image name="instagramicon" width="25" height="25"/>
+        <image name="linkedin" width="25" height="25"/>
+        <image name="twittericon" width="25" height="25"/>
     </resources>
 </document>
