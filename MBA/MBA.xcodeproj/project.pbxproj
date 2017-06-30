@@ -17,6 +17,7 @@
 		274FF70B1F05C3910058A0CF /* PreferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274FF70A1F05C3910058A0CF /* PreferenceVC.swift */; };
 		274FF70D1F05C90B0058A0CF /* AboutTheApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274FF70C1F05C90B0058A0CF /* AboutTheApp.swift */; };
 		274FF7101F05F8AF0058A0CF /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274FF70F1F05F8AF0058A0CF /* AboutUsVC.swift */; };
+		27521D201F06E0EA00EF8AD7 /* MbaStaffVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27521D1F1F06E0EA00EF8AD7 /* MbaStaffVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		274FF70A1F05C3910058A0CF /* PreferenceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceVC.swift; sourceTree = "<group>"; };
 		274FF70C1F05C90B0058A0CF /* AboutTheApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTheApp.swift; sourceTree = "<group>"; };
 		274FF70F1F05F8AF0058A0CF /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		27521D1F1F06E0EA00EF8AD7 /* MbaStaffVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MbaStaffVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				274FF70F1F05F8AF0058A0CF /* AboutUsVC.swift */,
+				27521D1F1F06E0EA00EF8AD7 /* MbaStaffVC.swift */,
 			);
 			name = "About Us";
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27521D201F06E0EA00EF8AD7 /* MbaStaffVC.swift in Sources */,
 				2707A0901EFF8D74004A21F0 /* ViewController.swift in Sources */,
 				274FF70D1F05C90B0058A0CF /* AboutTheApp.swift in Sources */,
 				274FF70B1F05C3910058A0CF /* PreferenceVC.swift in Sources */,

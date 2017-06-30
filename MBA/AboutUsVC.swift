@@ -42,4 +42,12 @@ class AboutUsVC: UIViewController {
         let spotiURL = URL(string: "https://twitter.com/MBACSUSB"); UIApplication.shared.open(spotiURL!, options: [:], completionHandler: nil);
     }
     
+    @IBAction func staffInfo(_ sender: Any) {
+        let MainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        if let StaffVC = MainStoryBoard.instantiateViewController(withIdentifier: "MBAStaff") as? MbaStaffVC {
+            self.present(StaffVC, animated: true, completion: nil)
+        }
+
+    }
+    
 }
