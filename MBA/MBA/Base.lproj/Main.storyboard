@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,17 +19,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="081-mD-tBL">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <color key="barTintColor" red="0.18823529410000001" green="0.2470588235" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="lfc-oZ-0bS">
                                         <barButtonItem key="leftBarButtonItem" style="done" id="IaK-b9-ShU">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lc2-5d-6rW">
-                                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                                <rect key="frame" x="16" y="7" width="92" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                                 <state key="normal" title="MBA">
@@ -39,25 +39,28 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="done" id="rrf-p7-DKq">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="olx-AE-vWj">
-                                                <rect key="frame" x="364" y="7" width="30" height="30"/>
+                                                <rect key="frame" x="329" y="7" width="30" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="ic_settings_white_24dp"/>
+                                                <connections>
+                                                    <action selector="PreferenceBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAU-vd-W3E"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m2z-Uh-xbx">
-                                <rect key="frame" x="30" y="105" width="354" height="589"/>
+                                <rect key="frame" x="26" y="105" width="323" height="520"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pPS-1w-uiq">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="94"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="82.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scY-34-aCm">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="94"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="82.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="csusb_logo" translatesAutoresizingMaskIntoConstraints="NO" id="uAI-gK-CEc">
-                                                        <rect key="frame" x="88" y="0.0" width="178" height="94"/>
+                                                        <rect key="frame" x="88" y="0.0" width="147" height="82"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </imageView>
                                                 </subviews>
@@ -66,17 +69,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p9T-S5-exA">
-                                        <rect key="frame" x="0.0" y="99" width="354" height="94"/>
+                                        <rect key="frame" x="0.0" y="87.5" width="323" height="82.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3k-Wm-SI6">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="94"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156.5" height="82.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="About Us" backgroundImage="About Us">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cos-37-tA2">
-                                                <rect key="frame" x="182" y="0.0" width="172" height="94"/>
+                                                <rect key="frame" x="166.5" y="0.0" width="156.5" height="82.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Contact Us" backgroundImage="Contact Us">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,17 +88,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uqZ-6M-U9L">
-                                        <rect key="frame" x="0.0" y="198" width="354" height="94"/>
+                                        <rect key="frame" x="0.0" y="175" width="323" height="82.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fo7-5b-9bk">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="94"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156.5" height="82.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Passport" backgroundImage="Passport">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7n-Na-jdO">
-                                                <rect key="frame" x="182" y="0.0" width="172" height="94"/>
+                                                <rect key="frame" x="166.5" y="0.0" width="156.5" height="82.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Advising" backgroundImage="Advising">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,17 +107,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Ak-Bc-OkJ">
-                                        <rect key="frame" x="0.0" y="297" width="354" height="94"/>
+                                        <rect key="frame" x="0.0" y="262.5" width="323" height="82.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQW-Gq-eio">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="94"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156.5" height="82.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Calendars" backgroundImage="Calendars">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkY-Sk-Kem">
-                                                <rect key="frame" x="182" y="0.0" width="172" height="94"/>
+                                                <rect key="frame" x="166.5" y="0.0" width="156.5" height="82.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="My Coyote" backgroundImage="MyCoyote">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -123,19 +126,23 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1re-Hn-eDw">
-                                        <rect key="frame" x="0.0" y="396" width="354" height="94"/>
+                                        <rect key="frame" x="0.0" y="350" width="323" height="82.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kME-dp-x7P">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="94"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156.5" height="82.5"/>
                                                 <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
-                                                <state key="normal" title="    Student Ambassadors" backgroundImage="Student Ambassadors">
+                                                <state key="normal" backgroundImage="Student Ambassadors">
+                                                    <string key="title">    Student
+Ambassadors</string>
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xUI-Sx-7Qc">
-                                                <rect key="frame" x="182" y="0.0" width="172" height="94"/>
+                                                <rect key="frame" x="166.5" y="0.0" width="156.5" height="82.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                                <state key="normal" title="   Graduate  Assistanship" backgroundImage="Graduate Assistantship">
+                                                <state key="normal" backgroundImage="Graduate Assistantship">
+                                                    <string key="title">   Graduate 
+Assistanship</string>
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -145,13 +152,13 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-dL-xnY">
-                                        <rect key="frame" x="0.0" y="495" width="354" height="94"/>
+                                        <rect key="frame" x="0.0" y="437.5" width="323" height="82.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhC-DT-AZG">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="94"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="82.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JCo-ge-Tdl">
-                                                        <rect key="frame" x="119.66666666666667" y="34.666666666666629" width="115.00000000000001" height="25"/>
+                                                        <rect key="frame" x="104" y="29.5" width="115" height="25"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INS-Md-LIh">
                                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -214,6 +221,195 @@
             </objects>
             <point key="canvasLocation" x="-153.62318840579712" y="-414.94565217391306"/>
         </scene>
+        <!--PreferenceVC-->
+        <scene sceneID="nBV-bn-whk">
+            <objects>
+                <viewController storyboardIdentifier="PreferenceVC" id="iVL-26-HIe" customClass="PreferenceVC" customModule="MBA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CXi-Df-SnF"/>
+                        <viewControllerLayoutGuide type="bottom" id="e5Q-w1-LLt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lKb-HF-kJX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKj-PQ-eYY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.18823529410000001" green="0.2470588235" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Preference" id="FKe-fl-Nxo">
+                                        <barButtonItem key="leftBarButtonItem" style="done" id="tpo-ac-cSC">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XJE-u6-7XE">
+                                                <rect key="frame" x="16" y="7" width="92" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                <state key="normal" title="&lt; Back">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="BackHome:" destination="iVL-26-HIe" eventType="touchUpInside" id="Cyb-wq-Mku"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_email" translatesAutoresizingMaskIntoConstraints="NO" id="INp-5p-RoC">
+                                <rect key="frame" x="16" y="208" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_account_box" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-lJ-QwK">
+                                <rect key="frame" x="16" y="101" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_event_note" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-Gb-FWv">
+                                <rect key="frame" x="16" y="141" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppI-79-P79">
+                                <rect key="frame" x="16" y="174" width="167" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGM-8w-Kro">
+                                <rect key="frame" x="16" y="74" width="167" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYP-MS-HEV">
+                                <rect key="frame" x="55" y="136" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ToAboutTheApp:" destination="iVL-26-HIe" eventType="touchUpInside" id="uew-xM-n7I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtg-kU-Fdj">
+                                <rect key="frame" x="55" y="96" width="110" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Coyote Account">
+                                    <color key="titleColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ToAboutTheApp:" destination="iVL-26-HIe" eventType="touchUpInside" id="TVw-vc-Nw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WB9-33-UMc">
+                                <rect key="frame" x="54" y="203" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Email Developer">
+                                    <color key="titleColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ToAboutTheApp:" destination="iVL-26-HIe" eventType="touchUpInside" id="T9V-zs-Afi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1W-Wt-viw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="-916"/>
+        </scene>
+        <!--About The App-->
+        <scene sceneID="tVj-hj-Gug">
+            <objects>
+                <viewController storyboardIdentifier="AboutVC" id="lrO-XS-nOz" customClass="AboutTheApp" customModule="MBA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MaP-ts-R2w"/>
+                        <viewControllerLayoutGuide type="bottom" id="fLl-QO-UTP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QKL-Pq-ydr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnY-FV-ZS5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.18823529410000001" green="0.2470588235" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="MBA Mobile App" id="0ET-yu-tnP">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="YhI-ib-bP3">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="BackBtn:" destination="lrO-XS-nOz" id="gWB-kT-sOe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MBA Mobile App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpN-Ht-FyI">
+                                <rect key="frame" x="16" y="179" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UBh-pv-T4G">
+                                <rect key="frame" x="16" y="222" width="343" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">CSUSB Master's of Business Administration (MBA) Passport v4.0 mobile application that is being developed by the CSE (482) Senior Project Software Engineering team at California State University, San Bernardino.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJm-c5-usw">
+                                <rect key="frame" x="120" y="83" width="135" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="djV-6g-i93"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="csusb_logo"/>
+                                <connections>
+                                    <action selector="ToHome:" destination="lrO-XS-nOz" eventType="touchUpInside" id="VuP-ZW-Lw1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 4.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfv-a5-SOD">
+                                <rect key="frame" x="16" y="202" width="343" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fJm-c5-usw" firstAttribute="top" secondItem="nnY-FV-ZS5" secondAttribute="bottom" constant="19" id="4Kv-8m-j7J"/>
+                            <constraint firstItem="Qfv-a5-SOD" firstAttribute="leading" secondItem="QKL-Pq-ydr" secondAttribute="leadingMargin" id="7rv-dm-PlS"/>
+                            <constraint firstItem="fJm-c5-usw" firstAttribute="top" secondItem="QKL-Pq-ydr" secondAttribute="top" constant="83" id="7xQ-f0-mLI"/>
+                            <constraint firstItem="gpN-Ht-FyI" firstAttribute="leading" secondItem="QKL-Pq-ydr" secondAttribute="leadingMargin" id="AEX-NM-K7u"/>
+                            <constraint firstItem="UBh-pv-T4G" firstAttribute="top" secondItem="Qfv-a5-SOD" secondAttribute="bottom" constant="8" id="GNs-Ox-NEB"/>
+                            <constraint firstItem="fJm-c5-usw" firstAttribute="leading" secondItem="QKL-Pq-ydr" secondAttribute="leadingMargin" constant="104" id="Nrv-g4-VCH"/>
+                            <constraint firstItem="Qfv-a5-SOD" firstAttribute="trailing" secondItem="QKL-Pq-ydr" secondAttribute="trailingMargin" id="R8p-Su-G34"/>
+                            <constraint firstItem="nnY-FV-ZS5" firstAttribute="leading" secondItem="QKL-Pq-ydr" secondAttribute="leading" id="V1i-9J-Lex"/>
+                            <constraint firstItem="fLl-QO-UTP" firstAttribute="top" secondItem="UBh-pv-T4G" secondAttribute="bottom" constant="185" id="XTe-TT-x5C"/>
+                            <constraint firstItem="UBh-pv-T4G" firstAttribute="trailing" secondItem="QKL-Pq-ydr" secondAttribute="trailingMargin" id="e8G-R5-d4T"/>
+                            <constraint firstItem="Qfv-a5-SOD" firstAttribute="top" secondItem="gpN-Ht-FyI" secondAttribute="bottom" constant="2" id="ghE-DS-WNE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fJm-c5-usw" secondAttribute="trailing" constant="104" id="iJu-1F-oZZ"/>
+                            <constraint firstItem="UBh-pv-T4G" firstAttribute="leading" secondItem="QKL-Pq-ydr" secondAttribute="leadingMargin" id="iz3-8M-b7n"/>
+                            <constraint firstItem="fJm-c5-usw" firstAttribute="centerX" secondItem="nnY-FV-ZS5" secondAttribute="centerX" id="jch-UZ-3fb"/>
+                            <constraint firstItem="gpN-Ht-FyI" firstAttribute="trailing" secondItem="QKL-Pq-ydr" secondAttribute="trailingMargin" id="lsc-qP-j2M"/>
+                            <constraint firstItem="gpN-Ht-FyI" firstAttribute="top" secondItem="fJm-c5-usw" secondAttribute="bottom" constant="14" id="sus-WI-FkK"/>
+                            <constraint firstItem="UBh-pv-T4G" firstAttribute="centerX" secondItem="nnY-FV-ZS5" secondAttribute="centerX" id="v6c-eI-aTY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goHome" id="Yn6-qV-fRO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bc-AS-7nY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295" y="-418"/>
+        </scene>
     </scenes>
     <resources>
         <image name="About Us" width="128" height="81"/>
@@ -226,6 +422,9 @@
         <image name="Student Ambassadors" width="128" height="81"/>
         <image name="csusb_logo" width="768" height="480"/>
         <image name="facebookicon" width="25" height="25"/>
+        <image name="ic_account_box" width="24" height="24"/>
+        <image name="ic_email" width="24" height="24"/>
+        <image name="ic_event_note" width="24" height="24"/>
         <image name="ic_settings_white_24dp" width="36" height="36"/>
         <image name="instagramicon" width="25" height="25"/>
         <image name="linkedin" width="25" height="25"/>

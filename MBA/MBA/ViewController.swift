@@ -38,5 +38,11 @@ class ViewController: UIViewController {
         let spotiURL = URL(string: "https://twitter.com/MBACSUSB"); UIApplication.shared.open(spotiURL!, options: [:], completionHandler: nil);
     }
     
+    @IBAction func PreferenceBtn(_ sender: Any) {
+        let MainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        if let PrefVC = MainStoryBoard.instantiateViewController(withIdentifier: "PreferenceVC") as? PreferenceVC {
+            self.present(PrefVC, animated: true, completion: nil)
+        }
+    }
 }
 
