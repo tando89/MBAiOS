@@ -229,6 +229,9 @@
                                                 <state key="normal" title="mba@csusb.edu">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="mbaEmail:" destination="5qJ-eN-eds" eventType="touchUpInside" id="LP2-u5-a81"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Question/Make a Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-EE-4hI">
                                                 <rect key="frame" x="8" y="478" width="359" height="20.5"/>
@@ -270,13 +273,16 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pne-hW-MGs">
-                                                <rect key="frame" x="281" y="1021" width="86" height="30"/>
-                                                <color key="backgroundColor" red="0.18823529411764706" green="0.24705882352941178" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Submit">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Message*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-vg-hom">
+                                                <rect key="frame" x="8" y="707" width="359" height="300"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="yiV-NJ-kSW"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsa-hq-dhA">
                                                 <rect key="frame" x="0.0" y="1185" width="375" height="85"/>
                                                 <subviews>
@@ -289,20 +295,20 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuF-Zg-OVP">
                                                                 <rect key="frame" x="30" y="0.0" width="25" height="25"/>
-                                                                <state key="normal" image="facebookicon"/>
+                                                                <state key="normal" image="instagramicon"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3A-gr-8qC">
                                                                 <rect key="frame" x="60" y="0.0" width="25" height="25"/>
-                                                                <state key="normal" image="facebookicon"/>
+                                                                <state key="normal" image="linkedin"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pig-UP-LUk">
                                                                 <rect key="frame" x="90" y="0.0" width="25" height="25"/>
-                                                                <state key="normal" image="facebookicon"/>
+                                                                <state key="normal" image="twittericon"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="x1Y-Ai-XnV" firstAttribute="centerX" secondItem="rsa-hq-dhA" secondAttribute="centerX" id="IJI-xs-Sba"/>
                                                     <constraint firstItem="x1Y-Ai-XnV" firstAttribute="centerY" secondItem="rsa-hq-dhA" secondAttribute="centerY" id="uOT-z5-guO"/>
@@ -325,7 +331,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="bc8-v6-03K" firstAttribute="top" secondItem="e3j-AX-DXy" secondAttribute="top" constant="6" id="Z4y-b4-xyk"/>
                                                     <constraint firstItem="bc8-v6-03K" firstAttribute="centerX" secondItem="e3j-AX-DXy" secondAttribute="centerX" id="ZRI-hh-gam"/>
@@ -367,17 +373,23 @@ Friday: 9:00am - 4:00pm</string>
                                                 <state key="normal" title="(909) 537-5703">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="mbaTel:" destination="5qJ-eN-eds" eventType="touchUpInside" id="c5U-wL-6FF"/>
+                                                </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Message*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-vg-hom">
-                                                <rect key="frame" x="8" y="707" width="359" height="300"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pne-hW-MGs">
+                                                <rect key="frame" x="144" y="1020" width="86" height="30"/>
+                                                <color key="backgroundColor" red="0.18823529411764706" green="0.24705882352941178" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="yiV-NJ-kSW"/>
+                                                    <constraint firstAttribute="width" constant="86" id="Vbp-DU-gTS"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitBtn:" destination="5qJ-eN-eds" eventType="touchUpInside" id="kWw-yy-m8r"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -397,8 +409,8 @@ Friday: 9:00am - 4:00pm</string>
                                             <constraint firstItem="afa-8P-KyB" firstAttribute="top" secondItem="eWD-Md-btg" secondAttribute="top" constant="612" id="CaL-Dh-cKR"/>
                                             <constraint firstItem="054-ik-OKK" firstAttribute="top" secondItem="e3j-AX-DXy" secondAttribute="bottom" constant="10" id="DCa-cl-rnf"/>
                                             <constraint firstItem="6Jd-1u-Km6" firstAttribute="leading" secondItem="eWD-Md-btg" secondAttribute="leading" constant="8" id="DWl-7i-Hgn"/>
+                                            <constraint firstItem="Pne-hW-MGs" firstAttribute="centerX" secondItem="rsa-hq-dhA" secondAttribute="centerX" id="EmX-KR-i2e"/>
                                             <constraint firstItem="e3j-AX-DXy" firstAttribute="leading" secondItem="eWD-Md-btg" secondAttribute="leading" id="HTl-ht-6Yt"/>
-                                            <constraint firstItem="Pne-hW-MGs" firstAttribute="top" secondItem="ErF-vg-hom" secondAttribute="bottom" constant="14" id="I9W-sz-fwN"/>
                                             <constraint firstItem="uT0-rS-sFU" firstAttribute="top" secondItem="t6o-2A-V2t" secondAttribute="bottom" constant="18" id="JsS-fh-8v9"/>
                                             <constraint firstItem="pEl-06-l46" firstAttribute="leading" secondItem="eWD-Md-btg" secondAttribute="leading" constant="8" id="Kda-gD-wxG"/>
                                             <constraint firstAttribute="trailing" secondItem="HC2-Aa-cgs" secondAttribute="trailing" constant="8" id="LYw-mZ-m7n"/>
@@ -408,7 +420,7 @@ Friday: 9:00am - 4:00pm</string>
                                             <constraint firstAttribute="trailing" secondItem="uT0-rS-sFU" secondAttribute="trailing" constant="8" id="RdX-Rq-2i8"/>
                                             <constraint firstItem="qLL-iw-a2o" firstAttribute="top" secondItem="afa-8P-KyB" secondAttribute="bottom" constant="18" id="TbC-jv-Dba"/>
                                             <constraint firstItem="e3j-AX-DXy" firstAttribute="trailing" secondItem="rsa-hq-dhA" secondAttribute="trailing" id="TcV-zB-cnv"/>
-                                            <constraint firstAttribute="trailing" secondItem="Pne-hW-MGs" secondAttribute="trailing" constant="8" id="Vst-1B-CRm"/>
+                                            <constraint firstItem="Pne-hW-MGs" firstAttribute="top" secondItem="ErF-vg-hom" secondAttribute="bottom" constant="13" id="VgI-pw-tLl"/>
                                             <constraint firstItem="e3j-AX-DXy" firstAttribute="leading" secondItem="rsa-hq-dhA" secondAttribute="leading" id="WzI-9C-eFP"/>
                                             <constraint firstAttribute="trailing" secondItem="e3j-AX-DXy" secondAttribute="trailing" id="ZBw-jd-bJ5"/>
                                             <constraint firstItem="6Jd-1u-Km6" firstAttribute="top" secondItem="jIR-nO-oeD" secondAttribute="bottom" constant="10" id="bJ2-9s-eV1"/>
@@ -433,7 +445,6 @@ Friday: 9:00am - 4:00pm</string>
                                             <constraint firstItem="gDM-1a-8v7" firstAttribute="leading" secondItem="6Jd-1u-Km6" secondAttribute="leading" id="pOR-Ii-tPN"/>
                                             <constraint firstItem="gDM-1a-8v7" firstAttribute="top" secondItem="6Jd-1u-Km6" secondAttribute="bottom" constant="10" id="q9V-Rf-t4Z"/>
                                             <constraint firstAttribute="trailing" secondItem="qLL-iw-a2o" secondAttribute="trailing" constant="8" id="qLU-Ft-ifz"/>
-                                            <constraint firstItem="Pne-hW-MGs" firstAttribute="leading" secondItem="eWD-Md-btg" secondAttribute="leading" constant="281" id="rXr-Eq-et1"/>
                                             <constraint firstItem="rsa-hq-dhA" firstAttribute="top" secondItem="054-ik-OKK" secondAttribute="bottom" constant="37" id="tHo-TA-JjY"/>
                                             <constraint firstItem="pEl-06-l46" firstAttribute="top" secondItem="5YA-2J-Zmp" secondAttribute="bottom" constant="10" id="u21-0Q-Snr"/>
                                             <constraint firstItem="054-ik-OKK" firstAttribute="leading" secondItem="eWD-Md-btg" secondAttribute="leading" id="vaf-bz-YWY"/>
@@ -470,6 +481,13 @@ Friday: 9:00am - 4:00pm</string>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1300"/>
+                    <connections>
+                        <outlet property="coyoteMail" destination="qLL-iw-a2o" id="U9a-68-9vI"/>
+                        <outlet property="firstNameTxt" destination="t6o-2A-V2t" id="ke0-RG-XXs"/>
+                        <outlet property="lastNameTxt" destination="uT0-rS-sFU" id="Y7R-pJ-fky"/>
+                        <outlet property="messageTxt" destination="ErF-vg-hom" id="mJl-bD-ej3"/>
+                        <outlet property="studentIdTxt" destination="afa-8P-KyB" id="kzf-Aw-dxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ii9-lj-RQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
