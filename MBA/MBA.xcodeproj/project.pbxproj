@@ -20,6 +20,7 @@
 		274FF70D1F05C90B0058A0CF /* AboutTheApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274FF70C1F05C90B0058A0CF /* AboutTheApp.swift */; };
 		274FF7101F05F8AF0058A0CF /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274FF70F1F05F8AF0058A0CF /* AboutUsVC.swift */; };
 		27521D201F06E0EA00EF8AD7 /* MbaStaffVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27521D1F1F06E0EA00EF8AD7 /* MbaStaffVC.swift */; };
+		467F24E01F0DCAB700F87C95 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F24DF1F0DCAB700F87C95 /* ContactUsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		274FF70C1F05C90B0058A0CF /* AboutTheApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTheApp.swift; sourceTree = "<group>"; };
 		274FF70F1F05F8AF0058A0CF /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		27521D1F1F06E0EA00EF8AD7 /* MbaStaffVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MbaStaffVC.swift; sourceTree = "<group>"; };
+		467F24DF1F0DCAB700F87C95 /* ContactUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		2707A0811EFF8D74004A21F0 = {
 			isa = PBXGroup;
 			children = (
+				467F24DE1F0DCA8500F87C95 /* Contact Us */,
 				274FF70E1F05F88A0058A0CF /* About Us */,
 				274FF7091F05C36F0058A0CF /* Preference */,
 				2707A08C1EFF8D74004A21F0 /* MBA */,
@@ -157,6 +160,14 @@
 				270C72EA1F073EA000A80F7C /* LearningGoalsVC.swift */,
 			);
 			name = "About Us";
+			sourceTree = "<group>";
+		};
+		467F24DE1F0DCA8500F87C95 /* Contact Us */ = {
+			isa = PBXGroup;
+			children = (
+				467F24DF1F0DCAB700F87C95 /* ContactUsVC.swift */,
+			);
+			name = "Contact Us";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				270C72E91F07398E00A80F7C /* MbaMissionVC.swift in Sources */,
 				274FF70D1F05C90B0058A0CF /* AboutTheApp.swift in Sources */,
 				274FF70B1F05C3910058A0CF /* PreferenceVC.swift in Sources */,
+				467F24E01F0DCAB700F87C95 /* ContactUsVC.swift in Sources */,
 				2707A08E1EFF8D74004A21F0 /* AppDelegate.swift in Sources */,
 				274FF7101F05F8AF0058A0CF /* AboutUsVC.swift in Sources */,
 				270C72EB1F073EA000A80F7C /* LearningGoalsVC.swift in Sources */,

@@ -59,7 +59,14 @@ class ViewController: UIViewController {
         if let AboutUsViewControl = MainSB.instantiateViewController(withIdentifier: "AboutUsView") as? AboutUsVC {
             self.present(AboutUsViewControl, animated: true, completion: nil)
         }
-
     }
+    
+    @IBAction func contactUsBtn(_ sender: Any) {
+        let MainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        if let ContactVC = MainStoryBoard.instantiateViewController(withIdentifier: "contactUs") as? ContactUsVC {
+            self.present(ContactVC, animated: true, completion: nil)
+        }
+    }
+    
 }
 
