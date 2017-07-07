@@ -8,19 +8,34 @@
 
 import UIKit
 
-class ContactUsVC: UIViewController {
+class ContactUsVC: UIViewController, UITextFieldDelegate {
     //Declare the URl for POST request
     let URL_FEEDBACK = "https://schoolserver-tand089.c9users.io/DepFeedback.php"
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Call function to dismiss the keyboard
-        self.hideKeyboardWhenTappedAround()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    //dismiss keyboard when touching outside
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    //dismiss keyboard when hit return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    //UITextField property to hold the most recently used textfield
+    private var currentTextField: UITextField?
+    //function to stop editting the last used textfield
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        currentTextField = textField
     }
     
     @IBAction func dismissBtn(_ sender: Any) {
@@ -77,40 +92,25 @@ class ContactUsVC: UIViewController {
                 (data, response, error) in
                 if error != nil
                 {
+                    print(error as Any)
                     DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Upload Didn't Work?", message: "Looks like the connection to the server didn't work.  Do you have Internet access?", preferredStyle: .alert)
+                            let alert = UIAlertController(title: "Submit failed!", message: "Please check Internet connection", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                             self.present(alert, animated: true, completion: nil)
                             }
-                    return;
                 }
                 //No error
                 else
                 {
-                    //parsing the response
-                    do {
-                        //converting resonse to NSDictionary
-                        let myJSON =  try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
-                        //parsing the json
-                        if let parseJSON = myJSON{
-                            //creating a string
-                            var msg : String!
-                            
-                            //getting the json response
-                            msg = parseJSON["message"] as! String?
-                            
-                            //Display the confirmation
-                            DispatchQueue.main.async
-                                {
-                                    let alert = UIAlertController(title: "Congratulation", message: msg, preferredStyle: .alert)
-                                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                                    self.present(alert, animated: true, completion: nil)
-                            }
-                            print (msg)
-                        }
-                        }
-                    catch {
-                        print (error)
+                    print("response = \(String(describing: response))")
+                    //Retieve the response from server
+                    let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                    print (responseString as Any)
+                    DispatchQueue.main.async
+                        {
+                            let alert = UIAlertController(title: "Congratulation!", message: responseString! as String, preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
                     }
                 }
                 
@@ -123,21 +123,14 @@ class ContactUsVC: UIViewController {
             studentIdTxt.text = ""
             coyoteMail.text = ""
             messageTxt.text = ""
+            //call the function to stop editting the last textfield
+            if let currentTextField = currentTextField {
+                currentTextField.resignFirstResponder()
+            }
         }
     
     } //Finished Button Func
     
 }
-//Hide the keyboard
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-}
+
 

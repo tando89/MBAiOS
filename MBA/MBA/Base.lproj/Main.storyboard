@@ -248,6 +248,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5qJ-eN-eds" id="Blk-6o-NQd"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uT0-rS-sFU">
                                                 <rect key="frame" x="8" y="560.5" width="359" height="32.5"/>
@@ -255,6 +258,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5qJ-eN-eds" id="liD-KA-uds"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Student ID*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afa-8P-KyB">
                                                 <rect key="frame" x="8" y="612" width="359" height="30"/>
@@ -265,6 +271,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5qJ-eN-eds" id="tHE-k0-DIU"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="MyCoyote E-mail*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLL-iw-a2o">
                                                 <rect key="frame" x="8" y="660" width="359" height="29"/>
@@ -272,6 +281,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5qJ-eN-eds" id="jZ9-U5-nOO"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Message*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-vg-hom">
                                                 <rect key="frame" x="8" y="707" width="359" height="300"/>
@@ -282,6 +294,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5qJ-eN-eds" id="Ntc-KV-7S3"/>
+                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsa-hq-dhA">
                                                 <rect key="frame" x="0.0" y="1185" width="375" height="85"/>
